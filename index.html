@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LearnToDo</title>
     <!-- bs css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
         body {
             font-family: 'Poppins', sans-serif;
         }
-        h1{
+
+        h1 {
             font-weight: bold;
         }
     </style>
 </head>
+
 <body>
     <header class="container-fluid">
+
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg bg-lignt">
             <!-- logo -->
-            <a class="navbar-brand " href="#">LearnToDo</a>
+            <a class="navbar-brand fw-bold" href="#">LearnToDo</a>
             <!-- search bar only for extra small screen -->
             <div class="d-none d-sm-block d-lg-none">
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-secondary" type="submit">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-                            viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
                             <path
                                 d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                         </svg>
@@ -37,7 +43,8 @@
                 </form>
             </div>
             <!-- toggler button-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- nav item -->
@@ -47,11 +54,11 @@
                     <a href="#courses" class="nav-link">Courses</a>
                     <a href="#about-us" class="nav-link">About Us</a>
                     <a href="" class="nav-link">Pricing</a>
-                    <a href="" class="nav-link">FAQs</a>
+                    <a href="#faq" class="nav-link">FAQs</a>
                 </div>
                 <div class="navbar-nav">
-                    <a href="" class="nav-link fw-semibold">Log In</a>
-                    <a href="" class="nav-link fw-semibold">Sign Up</a>
+                    <a href="" class="nav-link fw-semibold ">Log In</a>
+                    <a href="" class="nav-link fw-semibold text-primary">Sign Up</a>
                 </div>
             </div>
             <!-- search bar -->
@@ -59,8 +66,8 @@
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-secondary" type="submit">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-                            viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
                             <path
                                 d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                         </svg>
@@ -68,8 +75,9 @@
                 </form>
             </div>
         </nav>
+
         <!-- slideshow -->
-        <div id="carouselSlides" class="carousel slide" data-bs-ride="carousel"> 
+        <div id="carouselSlides" class="carousel slide" data-bs-ride="carousel">
             <!-- carousel indicators -->
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselSlides" data-bs-slide-to="0" class="active"
@@ -83,44 +91,56 @@
             </div>
             <!-- carousel inner -->
             <div class="carousel-inner text-white">
-                <div class="carousel-item  active " style="background: linear-gradient(#1D1D1DB2,#1D1D1DB2), url(images/Slider/cover-1.png); background-size: cover; background-repeat: no-repeat;">
-                    <div class="m-auto d-flex flex-column align-items-center justify-content-center text-center w-50 p-5" style="height: 56vw;">
+                <div class="carousel-item  active "
+                    style="background: linear-gradient(#1D1D1DB2,#1D1D1DB2), url(images/Slider/cover-1.png); background-size: cover; background-repeat: no-repeat;">
+                    <div class="m-auto d-flex flex-column align-items-center justify-content-center text-center w-50 p-5"
+                        style="height: 56vw;">
                         <h1 class="display-4 fw-semibold">Get Started Digital Learning</h1>
                         <p>
-                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout.
                         </p>
 
                         <br>
                         <button type="button" class="btn btn-primary rounded-0">Get Started</button>
                     </div>
                 </div>
-                <div class="carousel-item" style=" background: linear-gradient(#1D1D1DB2,#1D1D1DB2), url(images/Slider/pexels-julia-m-cameron-4144221.jpg); background-size: cover; background-repeat: no-repeat;">
-                    <div class="m-auto d-flex flex-column align-items-center justify-content-center text-center w-50 p-5" style="height: 56vw;">
+                <div class="carousel-item"
+                    style=" background: linear-gradient(#1D1D1DB2,#1D1D1DB2), url(images/Slider/pexels-julia-m-cameron-4144221.jpg); background-size: cover; background-repeat: no-repeat;">
+                    <div class="m-auto d-flex flex-column align-items-center justify-content-center text-center w-50 p-5"
+                        style="height: 56vw;">
                         <h1 class="display-4 fw-semibold">Second slide label</h1>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, nobis doloremque. Illo, maxime velit error cum minima
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, nobis doloremque. Illo, maxime
+                            velit error cum minima
                             est at laborum nostrum neque eveniet. Odit ipsam temporibus ea corporis a ad?
                         </p>
                         <br>
                         <button type="button" class="btn btn-primary rounded-0">Get Started</button>
                     </div>
                 </div>
-                <div class="carousel-item" style=" background: linear-gradient(#1D1D1DB2,#1D1D1DB2), url(images/Slider/pexels-armin-rimoldi-5553057.jpg); background-size: cover; background-repeat: no-repeat;">
-                    <div class="m-auto d-flex flex-column align-items-center justify-content-center text-center w-50 p-5" style="height: 56vw;">
+                <div class="carousel-item"
+                    style=" background: linear-gradient(#1D1D1DB2,#1D1D1DB2), url(images/Slider/pexels-armin-rimoldi-5553057.jpg); background-size: cover; background-repeat: no-repeat;">
+                    <div class="m-auto d-flex flex-column align-items-center justify-content-center text-center w-50 p-5"
+                        style="height: 56vw;">
                         <h1 class="display-4 fw-semibold">Third slide label</h1>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, nobis doloremque. Illo, maxime velit error cum minima
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, nobis doloremque. Illo, maxime
+                            velit error cum minima
                             est at laborum nostrum neque eveniet. Odit ipsam temporibus ea corporis a ad?
                         </p>
                         <br>
                         <button type="button" class="btn btn-primary rounded-0">Get Started</button>
                     </div>
                 </div>
-                <div class="carousel-item" style=" background: linear-gradient(#1D1D1DB2,#1D1D1DB2), url(images/Slider/pexels-katerina-holmes-5905700.jpg); background-size: cover; background-repeat: no-repeat;">
-                    <div class="m-auto d-flex flex-column align-items-center justify-content-center text-center w-50 p-5" style="height: 56vw;">
+                <div class="carousel-item"
+                    style=" background: linear-gradient(#1D1D1DB2,#1D1D1DB2), url(images/Slider/pexels-katerina-holmes-5905700.jpg); background-size: cover; background-repeat: no-repeat;">
+                    <div class="m-auto d-flex flex-column align-items-center justify-content-center text-center w-50 p-5"
+                        style="height: 56vw;">
                         <h1 class="display-4 fw-semibold">Forth slide label</h1>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, nobis doloremque. Illo, maxime velit error cum minima
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, nobis doloremque. Illo, maxime
+                            velit error cum minima
                             est at laborum nostrum neque eveniet. Odit ipsam temporibus ea corporis a ad?
                         </p>
                         <br>
@@ -137,7 +157,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div> 
+        </div>
     </header>
     <main>
 
@@ -155,13 +175,12 @@
                     <div class="card">
                         <div class="row g-0">
                             <div class="col-md-4 text-center">
-                                <img src="images/course/course-1.png" class="img-fluid rounded-start" alt="...">
+                                <img src="images/course/course-6.png" class="img-fluid w-100 rounded-start" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                                        content. This content is a little bit longer.</p>
+                                    <h5 class="card-title fw-semibold">Motion Graphics</h5>
+                                    <p class="card-text">Learn Motion Graphics and make amaizing Youtube video.</p>
                                     <p class="card-text"><small class="text-primary">Price: $20</small></p>
                                 </div>
                             </div>
@@ -172,13 +191,12 @@
                     <div class="card">
                         <div class="row g-0">
                             <div class="col-md-4 text-center">
-                                <img src="images/course/course-1.png" class="img-fluid rounded-start" alt="...">
+                                <img src="images/course/course-1.png" class="img-fluid w-100 rounded-start" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                                        content. This content is a little bit longer.</p>
+                                    <h5 class="card-title fw-semibold">UI & UX Design</h5>
+                                    <p class="card-text">Learn UI and UX design to make your own website and apps.</p>
                                     <p class="card-text"><small class="text-primary">Price: $20</small></p>
                                 </div>
                             </div>
@@ -189,13 +207,12 @@
                     <div class="card">
                         <div class="row g-0">
                             <div class="col-md-4 text-center">
-                                <img src="images/course/course-1.png" class="img-fluid rounded-start" alt="...">
+                                <img src="images/course/course-2.png" class="img-fluid w-100 rounded-start" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                                        content. This content is a little bit longer.</p>
+                                    <h5 class="card-title fw-semibold">Javascript A to Z </h5>
+                                    <p class="card-text">Master Javascript and make web games.</p>
                                     <p class="card-text"><small class="text-primary">Price: $20</small></p>
                                 </div>
                             </div>
@@ -206,13 +223,12 @@
                     <div class="card">
                         <div class="row g-0">
                             <div class="col-md-4 text-center">
-                                <img src="images/course/course-1.png" class="img-fluid rounded-start" alt="...">
+                                <img src="images/course/course-3.png" class="img-fluid w-100 rounded-start" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                                        content. This content is a little bit longer.</p>
+                                    <h5 class="card-title fw-semibold">Web Development</h5>
+                                    <p class="card-text">Make your own website for your business.</p>
                                     <p class="card-text"><small class="text-primary">Price: $20</small></p>
                                 </div>
                             </div>
@@ -223,13 +239,12 @@
                     <div class="card">
                         <div class="row g-0">
                             <div class="col-md-4 text-center">
-                                <img src="images/course/course-1.png" class="img-fluid rounded-start" alt="...">
+                                <img src="images/course/course-4.png" class="img-fluid w-100 rounded-start" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                                        content. This content is a little bit longer.</p>
+                                    <h5 class="card-title fw-semibold">Digital Marketring</h5>
+                                    <p class="card-text">Increase your business by Marketring your Product Digitaly.</p>
                                     <p class="card-text"><small class="text-primary">Price: $20</small></p>
                                 </div>
                             </div>
@@ -240,13 +255,12 @@
                     <div class="card">
                         <div class="row g-0">
                             <div class="col-md-4 text-center">
-                                <img src="images/course/course-1.png" class="img-fluid rounded-start" alt="...">
+                                <img src="images/course/course-5.png" class="img-fluid w-100 rounded-start" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                                        content. This content is a little bit longer.</p>
+                                    <h5 class="card-title fw-semibold">Photography Basics</h5>
+                                    <p class="card-text">Capture the moments of your life. Learn the basics of Photography.</p>
                                     <p class="card-text"><small class="text-primary">Price: $20</small></p>
                                 </div>
                             </div>
@@ -270,10 +284,13 @@
                     <div class="text-section">
                         <h1>Know About Us</h1>
                         <br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit molestiae quod, corrupti labore, obcaecati repellat ea ducimus consectetur maiores quam eum quidem, iste consequuntur libero! Eveniet optio hic accusamus amet.
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit molestiae quod, corrupti
+                            labore, obcaecati repellat ea ducimus consectetur maiores quam eum quidem, iste consequuntur
+                            libero! Eveniet optio hic accusamus amet.
                         </p>
                         <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit incidunt laudantium optio voluptatum doloribus vero perferendis accusantium, impedit aliquid nesciunt?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit incidunt laudantium optio
+                            voluptatum doloribus vero perferendis accusantium, impedit aliquid nesciunt?
                         </p>
                         <!-- statistics -->
                         <div class="stat d-flex justify-content-between flex-wrap me-5">
@@ -299,46 +316,56 @@
 
         <!-- ready to join section -->
         <section class="container-fluid my-5">
-            <div class="card mb-3" >
+            <div class="card mb-3">
                 <div class="row g-0 bg-primary p-5 text-white ">
                     <div class="col-lg-8">
                         <div class="card-body">
-                            <h1 class="card-title">Card title</h1>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                            <h1 class="card-title text-center">Card title</h1>
+                            <p class="card-text text-center">This is a wider card with supporting text below as a
+                                natural lead-in to
+                                additional
                                 content. This content is a little bit longer.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 d-flex justify-content-center ">
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-light text-primary rounded-0 my-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <button type="button" class="btn btn-light text-primary rounded-0 my-5" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
                             Register Now
                         </button>
-                        
+
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h1 class="modal-title fs-5 text-primary" id="exampleModalLabel">Sign Up</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
                                         <form>
                                             <div class="mb-3">
-                                                <label for="exampleInputEmail1" class="form-label text-primary">Email address</label>
-                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                                <label for="exampleInputEmail1" class="form-label text-primary">Email
+                                                    address</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                                    aria-describedby="emailHelp">
+                                                <div id="emailHelp" class="form-text">We'll never share your email with
+                                                    anyone else.</div>
                                             </div>
                                             <div class="mb-3">
-                                                <label for="exampleInputPassword1" class="form-label text-primary">Password</label>
+                                                <label for="exampleInputPassword1"
+                                                    class="form-label text-primary">Password</label>
                                                 <input type="password" class="form-control" id="exampleInputPassword1">
                                             </div>
                                         </form>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-primary">Save</button>
                                     </div>
                                 </div>
                             </div>
@@ -349,69 +376,87 @@
         </section>
 
         <!-- FAQ section -->
-        <section class="container my-5">
+        <section class="container my-5" id="faq">
             <div class="mx-auto">
                 <div class="text-center mb-3">
                     <h1>Frequently Asked Questions</h1>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at itslayout.</p>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at itslayout.</p>
                 </div>
                 <!-- accordian -->
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
                                 Accordion Item #1
                             </button>
                         </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                                <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the
+                                <code>.accordion-flush</code> class. This is the first item's accordion body.
+                            </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
                                 Accordion Item #2
                             </button>
                         </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                                <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
-                                filled with some actual content.</div>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the
+                                <code>.accordion-flush</code> class. This is the second item's accordion body. Let's
+                                imagine this being
+                                filled with some actual content.
+                            </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
                                 Accordion Item #3
                             </button>
                         </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
-                                happening here in terms of content, but just filling up the space to make it look, at least at first
-                                glance, a bit more representative of how this would look in a real-world application.</div>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the
+                                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing
+                                more exciting
+                                happening here in terms of content, but just filling up the space to make it look, at
+                                least at first
+                                glance, a bit more representative of how this would look in a real-world application.
+                            </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingFour">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
                                 Accordion Item #4
                             </button>
                         </h2>
-                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
-                                happening here in terms of content, but just filling up the space to make it look, at least at first
-                                glance, a bit more representative of how this would look in a real-world application.</div>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the
+                                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing
+                                more exciting
+                                happening here in terms of content, but just filling up the space to make it look, at
+                                least at first
+                                glance, a bit more representative of how this would look in a real-world application.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -439,27 +484,28 @@
                 <h1 class="text-white">LearnToDo</h1>
                 <!-- address -->
                 <p>Office 41, Zawaya Buildin, Ghala Muscat, Sultanate of Oman</p>
-                <p> <a href="#" class="text-decoration-none text-white">Privacy Ploicy</a>  | <a href="#" class="text-decoration-none text-white">Terms of use</a> 
+                <p> <a href="#" class="text-decoration-none text-white">Privacy Ploicy</a> | <a href="#"
+                        class="text-decoration-none text-white">Terms of use</a>
                 </p>
 
                 <!-- social icons -->
-                <div >
+                <div>
                     <a href="#" class="text-decoration-none text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="bi bi-facebook m-1"
-                            viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor"
+                            class="bi bi-facebook m-1" viewBox="0 0 16 16">
                             <path
                                 d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
                         </svg>
                     </a>
                     <a href="#" class="text-white ">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="bi bi-linkedin m-1"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                    </svg></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor"
+                            class="bi bi-linkedin m-1" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg></a>
                     <a href="#" class="text-white ">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="bi bi-discord m-1"
-                            viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor"
+                            class="bi bi-discord m-1" viewBox="0 0 16 16">
                             <path
                                 d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z" />
                         </svg>
@@ -470,6 +516,9 @@
     </main>
 
     <!-- bs js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
